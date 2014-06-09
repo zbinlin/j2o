@@ -1,5 +1,5 @@
 {
-  "name": "J2O",
+  "name": "j2o",
   "version": "0.0.1",
   "description": "read JSON file as javascript object.",
   "main": "index.js",
