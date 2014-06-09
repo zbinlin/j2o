@@ -9,6 +9,10 @@
   "keywords": [
     "JSON"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zbinlin/j2o.git"
+  },
   "author": "zbinlin",
   "license": "ISC",
   "dependencies": {
