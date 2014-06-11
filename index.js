@@ -27,6 +27,7 @@ function _(cwd) {
             path.relative(cwd, dir),
             basename
         );
+        delete require.cache[require.resolve(file)];
         this[key] = require(file);
     }
 }
