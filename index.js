@@ -28,7 +28,12 @@ function _(cwd) {
             basename
         );
         delete require.cache[require.resolve(file)];
-        this[key] = require(file);
+        var res = require(file);
+        if ("__name__" in res) {
+            this["__name__"] = res;
+        } else {
+            this[key] = res;
+        }
     }
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "j2o",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "read JSON file as javascript object.",
   "main": "index.js",
   "scripts": {
