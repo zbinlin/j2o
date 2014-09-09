@@ -30,7 +30,8 @@ function _(cwd) {
         delete require.cache[require.resolve(file)];
         var res = require(file);
         if ("__name__" in res) {
-            this["__name__"] = res;
+            this[res["__name__"]] = res;
+            delete res["__name__"];
         } else {
             this[key] = res;
         }
